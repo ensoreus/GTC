@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28D232AE176F87DD00405397 /* GLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D232AD176F87DD00405397 /* GLoginViewController.xib */; };
+		28EFBDEA176F633700EC2F96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EFBDE9176F633700EC2F96 /* UIKit.framework */; };
+		28EFBDEC176F633700EC2F96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EFBDEB176F633700EC2F96 /* Foundation.framework */; };
+		28EFBDEE176F633700EC2F96 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EFBDED176F633700EC2F96 /* CoreGraphics.framework */; };
+		28EFBDF4176F633800EC2F96 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28EFBDF2176F633800EC2F96 /* InfoPlist.strings */; };
+		28EFBDF6176F633800EC2F96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBDF5176F633800EC2F96 /* main.m */; };
+		28EFBDFA176F633800EC2F96 /* GAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBDF9176F633800EC2F96 /* GAppDelegate.m */; };
+		28EFBDFC176F633800EC2F96 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 28EFBDFB176F633800EC2F96 /* Default.png */; };
+		28EFBDFE176F633800EC2F96 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28EFBDFD176F633800EC2F96 /* Default@2x.png */; };
+		28EFBE00176F633800EC2F96 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28EFBDFF176F633800EC2F96 /* Default-568h@2x.png */; };
+		28EFBE03176F633800EC2F96 /* GLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE02176F633800EC2F96 /* GLoginViewController.m */; };
+		28EFBE0E176F633800EC2F96 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EFBE0D176F633800EC2F96 /* SenTestingKit.framework */; };
+		28EFBE0F176F633800EC2F96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EFBDE9176F633700EC2F96 /* UIKit.framework */; };
+		28EFBE10176F633800EC2F96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EFBDEB176F633700EC2F96 /* Foundation.framework */; };
+		28EFBE18176F633800EC2F96 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28EFBE16176F633800EC2F96 /* InfoPlist.strings */; };
+		28EFBE1B176F633800EC2F96 /* GTCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE1A176F633800EC2F96 /* GTCTests.m */; };
+		28EFBE2A176F666300EC2F96 /* GLoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE29176F666300EC2F96 /* GLoginTests.m */; };
+		28EFBE2D176F674900EC2F96 /* GAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE2C176F674900EC2F96 /* GAuthController.m */; };
+		28EFBE2E176F674900EC2F96 /* GAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE2C176F674900EC2F96 /* GAuthController.m */; };
+		28EFBE31176F71BF00EC2F96 /* NotesModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE2F176F71BE00EC2F96 /* NotesModel.xcdatamodeld */; };
+		28EFBE32176F71BF00EC2F96 /* NotesModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE2F176F71BE00EC2F96 /* NotesModel.xcdatamodeld */; };
+		28EFBE3C176F740500EC2F96 /* GMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28EFBE3A176F740500EC2F96 /* GMainViewController.xib */; };
+		28EFBE40176F78AB00EC2F96 /* GNotesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE3E176F78AB00EC2F96 /* GNotesListViewController.m */; };
+		28EFBE41176F78AB00EC2F96 /* GNotesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28EFBE3F176F78AB00EC2F96 /* GNotesListViewController.xib */; };
+		28EFBE45176F78E100EC2F96 /* GNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE43176F78E100EC2F96 /* GNoteViewController.m */; };
+		28EFBE46176F78E100EC2F96 /* GNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28EFBE44176F78E100EC2F96 /* GNoteViewController.xib */; };
+		28EFBE4D176F79DF00EC2F96 /* NoteEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE4C176F79DF00EC2F96 /* NoteEntity.m */; };
+		28EFBE4E176F79DF00EC2F96 /* NoteEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE4C176F79DF00EC2F96 /* NoteEntity.m */; };
+		28EFBE50176F7C7600EC2F96 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EFBE4F176F7C7600EC2F96 /* CoreData.framework */; };
+		28EFBE52176F849B00EC2F96 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EFBE51176F849B00EC2F96 /* CoreLocation.framework */; };
+		9C61AB8888334EA4B3FB9D82 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB87E295CD44E33BB074AD3 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28EFBE11176F633800EC2F96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28EFBDDE176F633700EC2F96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28EFBDE5176F633700EC2F96;
+			remoteInfo = GTC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28D232AD176F87DD00405397 /* GLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLoginViewController.xib; sourceTree = "<group>"; };
+		28EFBDE6176F633700EC2F96 /* GTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28EFBDE9176F633700EC2F96 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		28EFBDEB176F633700EC2F96 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		28EFBDED176F633700EC2F96 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28EFBDF1176F633800EC2F96 /* GTC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GTC-Info.plist"; sourceTree = "<group>"; };
+		28EFBDF3176F633800EC2F96 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		28EFBDF5176F633800EC2F96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		28EFBDF7176F633800EC2F96 /* GTC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GTC-Prefix.pch"; sourceTree = "<group>"; };
+		28EFBDF8176F633800EC2F96 /* GAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAppDelegate.h; sourceTree = "<group>"; };
+		28EFBDF9176F633800EC2F96 /* GAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GAppDelegate.m; sourceTree = "<group>"; };
+		28EFBDFB176F633800EC2F96 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		28EFBDFD176F633800EC2F96 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		28EFBDFF176F633800EC2F96 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		28EFBE01176F633800EC2F96 /* GLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLoginViewController.h; sourceTree = "<group>"; };
+		28EFBE02176F633800EC2F96 /* GLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLoginViewController.m; sourceTree = "<group>"; };
+		28EFBE0C176F633800EC2F96 /* GTCTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GTCTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28EFBE0D176F633800EC2F96 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		28EFBE15176F633800EC2F96 /* GTCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GTCTests-Info.plist"; sourceTree = "<group>"; };
+		28EFBE17176F633800EC2F96 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		28EFBE19176F633800EC2F96 /* GTCTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTCTests.h; sourceTree = "<group>"; };
+		28EFBE1A176F633800EC2F96 /* GTCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTCTests.m; sourceTree = "<group>"; };
+		28EFBE28176F666300EC2F96 /* GLoginTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLoginTests.h; sourceTree = "<group>"; };
+		28EFBE29176F666300EC2F96 /* GLoginTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLoginTests.m; sourceTree = "<group>"; };
+		28EFBE2B176F674900EC2F96 /* GAuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAuthController.h; path = Login/GAuthController.h; sourceTree = "<group>"; };
+		28EFBE2C176F674900EC2F96 /* GAuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GAuthController.m; path = Login/GAuthController.m; sourceTree = "<group>"; };
+		28EFBE30176F71BF00EC2F96 /* NotesModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotesModel.xcdatamodel; sourceTree = "<group>"; };
+		28EFBE3A176F740500EC2F96 /* GMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GMainViewController.xib; sourceTree = "<group>"; };
+		28EFBE3D176F78AB00EC2F96 /* GNotesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNotesListViewController.h; sourceTree = "<group>"; };
+		28EFBE3E176F78AB00EC2F96 /* GNotesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNotesListViewController.m; sourceTree = "<group>"; };
+		28EFBE3F176F78AB00EC2F96 /* GNotesListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GNotesListViewController.xib; sourceTree = "<group>"; };
+		28EFBE42176F78E100EC2F96 /* GNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNoteViewController.h; sourceTree = "<group>"; };
+		28EFBE43176F78E100EC2F96 /* GNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNoteViewController.m; sourceTree = "<group>"; };
+		28EFBE44176F78E100EC2F96 /* GNoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GNoteViewController.xib; sourceTree = "<group>"; };
+		28EFBE4B176F79DF00EC2F96 /* NoteEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteEntity.h; sourceTree = "<group>"; };
+		28EFBE4C176F79DF00EC2F96 /* NoteEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteEntity.m; sourceTree = "<group>"; };
+		28EFBE4F176F7C7600EC2F96 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		28EFBE51176F849B00EC2F96 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5BB87E295CD44E33BB074AD3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E9E2C0D9E624998A326EC61 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28EFBDE3176F633700EC2F96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28EFBE52176F849B00EC2F96 /* CoreLocation.framework in Frameworks */,
+				28EFBE50176F7C7600EC2F96 /* CoreData.framework in Frameworks */,
+				28EFBDEA176F633700EC2F96 /* UIKit.framework in Frameworks */,
+				28EFBDEC176F633700EC2F96 /* Foundation.framework in Frameworks */,
+				28EFBDEE176F633700EC2F96 /* CoreGraphics.framework in Frameworks */,
+				9C61AB8888334EA4B3FB9D82 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28EFBE08176F633800EC2F96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28EFBE0E176F633800EC2F96 /* SenTestingKit.framework in Frameworks */,
+				28EFBE0F176F633800EC2F96 /* UIKit.framework in Frameworks */,
+				28EFBE10176F633800EC2F96 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2802B1D0176FA7AD00E65407 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				28EFBE2B176F674900EC2F96 /* GAuthController.h */,
+				28EFBE2C176F674900EC2F96 /* GAuthController.m */,
+				28EFBE01176F633800EC2F96 /* GLoginViewController.h */,
+				28EFBE02176F633800EC2F96 /* GLoginViewController.m */,
+				28D232AD176F87DD00405397 /* GLoginViewController.xib */,
+			);
+			name = Auth;
+			sourceTree = "<group>";
+		};
+		2802B1D1176FA7CA00E65407 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				28EFBE2F176F71BE00EC2F96 /* NotesModel.xcdatamodeld */,
+				28EFBE4B176F79DF00EC2F96 /* NoteEntity.h */,
+				28EFBE4C176F79DF00EC2F96 /* NoteEntity.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		28EFBDDD176F633700EC2F96 = {
+			isa = PBXGroup;
+			children = (
+				28EFBDEF176F633700EC2F96 /* GTC */,
+				28EFBE13176F633800EC2F96 /* GTCTests */,
+				28EFBDE8176F633700EC2F96 /* Frameworks */,
+				28EFBDE7176F633700EC2F96 /* Products */,
+				8E9E2C0D9E624998A326EC61 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		28EFBDE7176F633700EC2F96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28EFBDE6176F633700EC2F96 /* GTC.app */,
+				28EFBE0C176F633800EC2F96 /* GTCTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28EFBDE8176F633700EC2F96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28EFBE51176F849B00EC2F96 /* CoreLocation.framework */,
+				28EFBE4F176F7C7600EC2F96 /* CoreData.framework */,
+				28EFBDE9176F633700EC2F96 /* UIKit.framework */,
+				28EFBDEB176F633700EC2F96 /* Foundation.framework */,
+				28EFBDED176F633700EC2F96 /* CoreGraphics.framework */,
+				28EFBE0D176F633800EC2F96 /* SenTestingKit.framework */,
+				5BB87E295CD44E33BB074AD3 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28EFBDEF176F633700EC2F96 /* GTC */ = {
+			isa = PBXGroup;
+			children = (
+				2802B1D1176FA7CA00E65407 /* Model */,
+				28EFBDF8176F633800EC2F96 /* GAppDelegate.h */,
+				28EFBDF9176F633800EC2F96 /* GAppDelegate.m */,
+				2802B1D0176FA7AD00E65407 /* Auth */,
+				28EFBE3D176F78AB00EC2F96 /* GNotesListViewController.h */,
+				28EFBE3E176F78AB00EC2F96 /* GNotesListViewController.m */,
+				28EFBE3F176F78AB00EC2F96 /* GNotesListViewController.xib */,
+				28EFBE42176F78E100EC2F96 /* GNoteViewController.h */,
+				28EFBE43176F78E100EC2F96 /* GNoteViewController.m */,
+				28EFBE44176F78E100EC2F96 /* GNoteViewController.xib */,
+				28EFBDF0176F633800EC2F96 /* Supporting Files */,
+				28EFBE3A176F740500EC2F96 /* GMainViewController.xib */,
+			);
+			path = GTC;
+			sourceTree = "<group>";
+		};
+		28EFBDF0176F633800EC2F96 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28EFBDF1176F633800EC2F96 /* GTC-Info.plist */,
+				28EFBDF2176F633800EC2F96 /* InfoPlist.strings */,
+				28EFBDF5176F633800EC2F96 /* main.m */,
+				28EFBDF7176F633800EC2F96 /* GTC-Prefix.pch */,
+				28EFBDFB176F633800EC2F96 /* Default.png */,
+				28EFBDFD176F633800EC2F96 /* Default@2x.png */,
+				28EFBDFF176F633800EC2F96 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28EFBE13176F633800EC2F96 /* GTCTests */ = {
+			isa = PBXGroup;
+			children = (
+				28EFBE19176F633800EC2F96 /* GTCTests.h */,
+				28EFBE1A176F633800EC2F96 /* GTCTests.m */,
+				28EFBE14176F633800EC2F96 /* Supporting Files */,
+				28EFBE28176F666300EC2F96 /* GLoginTests.h */,
+				28EFBE29176F666300EC2F96 /* GLoginTests.m */,
+			);
+			path = GTCTests;
+			sourceTree = "<group>";
+		};
+		28EFBE14176F633800EC2F96 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28EFBE15176F633800EC2F96 /* GTCTests-Info.plist */,
+				28EFBE16176F633800EC2F96 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28EFBDE5176F633700EC2F96 /* GTC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28EFBE1E176F633800EC2F96 /* Build configuration list for PBXNativeTarget "GTC" */;
+			buildPhases = (
+				CDF66D9C8BFA47F6AEFA6092 /* Check Pods Manifest.lock */,
+				28EFBDE2176F633700EC2F96 /* Sources */,
+				28EFBDE3176F633700EC2F96 /* Frameworks */,
+				28EFBDE4176F633700EC2F96 /* Resources */,
+				8ACCAB9984A246519429EA00 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GTC;
+			productName = GTC;
+			productReference = 28EFBDE6176F633700EC2F96 /* GTC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28EFBE0B176F633800EC2F96 /* GTCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28EFBE21176F633800EC2F96 /* Build configuration list for PBXNativeTarget "GTCTests" */;
+			buildPhases = (
+				28EFBE07176F633800EC2F96 /* Sources */,
+				28EFBE08176F633800EC2F96 /* Frameworks */,
+				28EFBE09176F633800EC2F96 /* Resources */,
+				28EFBE0A176F633800EC2F96 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28EFBE12176F633800EC2F96 /* PBXTargetDependency */,
+			);
+			name = GTCTests;
+			productName = GTCTests;
+			productReference = 28EFBE0C176F633800EC2F96 /* GTCTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28EFBDDE176F633700EC2F96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = G;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Philipp Maluta";
+			};
+			buildConfigurationList = 28EFBDE1176F633700EC2F96 /* Build configuration list for PBXProject "GTC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 28EFBDDD176F633700EC2F96;
+			productRefGroup = 28EFBDE7176F633700EC2F96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28EFBDE5176F633700EC2F96 /* GTC */,
+				28EFBE0B176F633800EC2F96 /* GTCTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28EFBDE4176F633700EC2F96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28EFBDF4176F633800EC2F96 /* InfoPlist.strings in Resources */,
+				28EFBDFC176F633800EC2F96 /* Default.png in Resources */,
+				28EFBDFE176F633800EC2F96 /* Default@2x.png in Resources */,
+				28EFBE00176F633800EC2F96 /* Default-568h@2x.png in Resources */,
+				28EFBE3C176F740500EC2F96 /* GMainViewController.xib in Resources */,
+				28EFBE41176F78AB00EC2F96 /* GNotesListViewController.xib in Resources */,
+				28EFBE46176F78E100EC2F96 /* GNoteViewController.xib in Resources */,
+				28D232AE176F87DD00405397 /* GLoginViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28EFBE09176F633800EC2F96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28EFBE18176F633800EC2F96 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28EFBE0A176F633800EC2F96 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		8ACCAB9984A246519429EA00 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		CDF66D9C8BFA47F6AEFA6092 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28EFBDE2176F633700EC2F96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28EFBDF6176F633800EC2F96 /* main.m in Sources */,
+				28EFBDFA176F633800EC2F96 /* GAppDelegate.m in Sources */,
+				28EFBE03176F633800EC2F96 /* GLoginViewController.m in Sources */,
+				28EFBE2D176F674900EC2F96 /* GAuthController.m in Sources */,
+				28EFBE31176F71BF00EC2F96 /* NotesModel.xcdatamodeld in Sources */,
+				28EFBE40176F78AB00EC2F96 /* GNotesListViewController.m in Sources */,
+				28EFBE45176F78E100EC2F96 /* GNoteViewController.m in Sources */,
+				28EFBE4D176F79DF00EC2F96 /* NoteEntity.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28EFBE07176F633800EC2F96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28EFBE1B176F633800EC2F96 /* GTCTests.m in Sources */,
+				28EFBE2A176F666300EC2F96 /* GLoginTests.m in Sources */,
+				28EFBE2E176F674900EC2F96 /* GAuthController.m in Sources */,
+				28EFBE32176F71BF00EC2F96 /* NotesModel.xcdatamodeld in Sources */,
+				28EFBE4E176F79DF00EC2F96 /* NoteEntity.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28EFBE12176F633800EC2F96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28EFBDE5176F633700EC2F96 /* GTC */;
+			targetProxy = 28EFBE11176F633800EC2F96 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28EFBDF2176F633800EC2F96 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28EFBDF3176F633800EC2F96 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		28EFBE16176F633800EC2F96 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28EFBE17176F633800EC2F96 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28EFBE1C176F633800EC2F96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		28EFBE1D176F633800EC2F96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28EFBE1F176F633800EC2F96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E9E2C0D9E624998A326EC61 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GTC/GTC-Prefix.pch";
+				INFOPLIST_FILE = "GTC/GTC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		28EFBE20176F633800EC2F96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E9E2C0D9E624998A326EC61 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GTC/GTC-Prefix.pch";
+				INFOPLIST_FILE = "GTC/GTC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		28EFBE22176F633800EC2F96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GTC.app/GTC";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GTC/GTC-Prefix.pch";
+				INFOPLIST_FILE = "GTCTests/GTCTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		28EFBE23176F633800EC2F96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GTC.app/GTC";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GTC/GTC-Prefix.pch";
+				INFOPLIST_FILE = "GTCTests/GTCTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28EFBDE1176F633700EC2F96 /* Build configuration list for PBXProject "GTC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28EFBE1C176F633800EC2F96 /* Debug */,
+				28EFBE1D176F633800EC2F96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28EFBE1E176F633800EC2F96 /* Build configuration list for PBXNativeTarget "GTC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28EFBE1F176F633800EC2F96 /* Debug */,
+				28EFBE20176F633800EC2F96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28EFBE21176F633800EC2F96 /* Build configuration list for PBXNativeTarget "GTCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28EFBE22176F633800EC2F96 /* Debug */,
+				28EFBE23176F633800EC2F96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		28EFBE2F176F71BE00EC2F96 /* NotesModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				28EFBE30176F71BF00EC2F96 /* NotesModel.xcdatamodel */,
+			);
+			currentVersion = 28EFBE30176F71BF00EC2F96 /* NotesModel.xcdatamodel */;
+			name = NotesModel.xcdatamodeld;
+			path = ../NotesModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 28EFBDDE176F633700EC2F96 /* Project object */;
+}
