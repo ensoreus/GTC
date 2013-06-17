@@ -29,9 +29,19 @@
     if ([login isEqualToString:@"Luke"] && [password isEqualToString:@"Jedi"])
     {
         self.token =  [self generateToken];
-        self.successBlock(self.token);
+        if (self.successBlock) {
+            self.successBlock(self.token);
+        }else if (self.delegate) {
+            [self.delegate onSuccess:self.token];
+        }
+        
     }else{
-        self.failedBlock([self generateAuthError]);
+        if (self.failedBlock){
+            self.failedBlock([self generateAuthError]);
+        }else if (self.delegate)
+        {
+            [self.delegate onFailed:[self generateAuthError]];
+        }
     }
 }
 
@@ -52,5 +62,11 @@
 - (NSError *)generateAuthError
 {
     return [NSError errorWithDomain:NSOSStatusErrorDomain code:400 userInfo:nil];
+}
+
+- (void)logout
+{
+    self.token = nil;
+    self.successBlock(nil);
 }
 @end

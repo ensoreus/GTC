@@ -6,24 +6,21 @@
 //  Copyright (c) 2013 Philipp Maluta. All rights reserved.
 //
 
-#import "GViewController.h"
+#import "GLoginViewController.h"
 #import "GAuthController.h"
+#import "GNotesListViewController.h"
 
-@interface GViewController ()
+@interface GLoginViewController ()<AuthControllerDelegate>
 @property(nonatomic, strong) GAuthController *authController;
 @end
 
-@implementation GViewController
+@implementation GLoginViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.authController = [GAuthController authController];
-    [self.authController setSuccessBlock:^(NSString *token){
-        
-    }
-     ];
-	// Do any additional setup after loading the view, typically from a nib.
+    [self.authController setDelegate:self];    
 }
 
 - (void)didReceiveMemoryWarning
@@ -33,22 +30,22 @@
 }
 
 - (IBAction)onLogin {
-    [self loginFailed];
+    [self.authController authWithLogin:self.tfLogin.text password:self.tfPassword.text];
 }
 
-- (void)loginPassed
-{
-    
+- (void)onSuccess:(NSString *)token{
+    GNotesListViewController *notesList = [[GNotesListViewController alloc] initWithNibName:@"GNotesListViewController" bundle:nil];
+    [self.navigationController pushViewController:notesList animated:YES];
 }
 
-- (void)loginFailed
+- (void)onFailed:(NSError *)error
 {
     [self.lbLoginFailed setHidden:NO];
-    
     double delayInSeconds = 2.0;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
         [self.lbLoginFailed setHidden:YES];
     });
+    
 }
 @end

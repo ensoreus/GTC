@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@class GViewController;
+@class GLoginViewController;
 
 @interface GAppDelegate : UIResponder <UIApplicationDelegate>
-
 @property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) GViewController *viewController;
+@property (strong, nonatomic)NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (strong, nonatomic)NSManagedObjectModel *managedObjectModel;
+@property (strong, nonatomic)NSManagedObjectContext *managedObjectContext;
+@property (strong, nonatomic) IBOutlet UINavigationController *navigationController;
 
 @end

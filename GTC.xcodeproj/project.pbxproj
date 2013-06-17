@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28D232AE176F87DD00405397 /* GLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D232AD176F87DD00405397 /* GLoginViewController.xib */; };
 		28EFBDEA176F633700EC2F96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EFBDE9176F633700EC2F96 /* UIKit.framework */; };
 		28EFBDEC176F633700EC2F96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EFBDEB176F633700EC2F96 /* Foundation.framework */; };
 		28EFBDEE176F633700EC2F96 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EFBDED176F633700EC2F96 /* CoreGraphics.framework */; };
@@ -16,22 +17,26 @@
 		28EFBDFC176F633800EC2F96 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 28EFBDFB176F633800EC2F96 /* Default.png */; };
 		28EFBDFE176F633800EC2F96 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28EFBDFD176F633800EC2F96 /* Default@2x.png */; };
 		28EFBE00176F633800EC2F96 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28EFBDFF176F633800EC2F96 /* Default-568h@2x.png */; };
-		28EFBE03176F633800EC2F96 /* GViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE02176F633800EC2F96 /* GViewController.m */; };
-		28EFBE06176F633800EC2F96 /* GViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28EFBE04176F633800EC2F96 /* GViewController.xib */; };
+		28EFBE03176F633800EC2F96 /* GLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE02176F633800EC2F96 /* GLoginViewController.m */; };
 		28EFBE0E176F633800EC2F96 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EFBE0D176F633800EC2F96 /* SenTestingKit.framework */; };
 		28EFBE0F176F633800EC2F96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EFBDE9176F633700EC2F96 /* UIKit.framework */; };
 		28EFBE10176F633800EC2F96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EFBDEB176F633700EC2F96 /* Foundation.framework */; };
 		28EFBE18176F633800EC2F96 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28EFBE16176F633800EC2F96 /* InfoPlist.strings */; };
 		28EFBE1B176F633800EC2F96 /* GTCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE1A176F633800EC2F96 /* GTCTests.m */; };
-		28EFBE26176F634F00EC2F96 /* NotesModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE24176F634F00EC2F96 /* NotesModel.xcdatamodeld */; };
-		28EFBE27176F634F00EC2F96 /* NotesModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE24176F634F00EC2F96 /* NotesModel.xcdatamodeld */; };
 		28EFBE2A176F666300EC2F96 /* GLoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE29176F666300EC2F96 /* GLoginTests.m */; };
 		28EFBE2D176F674900EC2F96 /* GAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE2C176F674900EC2F96 /* GAuthController.m */; };
 		28EFBE2E176F674900EC2F96 /* GAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE2C176F674900EC2F96 /* GAuthController.m */; };
 		28EFBE31176F71BF00EC2F96 /* NotesModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE2F176F71BE00EC2F96 /* NotesModel.xcdatamodeld */; };
 		28EFBE32176F71BF00EC2F96 /* NotesModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE2F176F71BE00EC2F96 /* NotesModel.xcdatamodeld */; };
-		28EFBE3B176F740500EC2F96 /* GMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE39176F740500EC2F96 /* GMainViewController.m */; };
 		28EFBE3C176F740500EC2F96 /* GMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28EFBE3A176F740500EC2F96 /* GMainViewController.xib */; };
+		28EFBE40176F78AB00EC2F96 /* GNotesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE3E176F78AB00EC2F96 /* GNotesListViewController.m */; };
+		28EFBE41176F78AB00EC2F96 /* GNotesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28EFBE3F176F78AB00EC2F96 /* GNotesListViewController.xib */; };
+		28EFBE45176F78E100EC2F96 /* GNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE43176F78E100EC2F96 /* GNoteViewController.m */; };
+		28EFBE46176F78E100EC2F96 /* GNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28EFBE44176F78E100EC2F96 /* GNoteViewController.xib */; };
+		28EFBE4D176F79DF00EC2F96 /* NoteEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE4C176F79DF00EC2F96 /* NoteEntity.m */; };
+		28EFBE4E176F79DF00EC2F96 /* NoteEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE4C176F79DF00EC2F96 /* NoteEntity.m */; };
+		28EFBE50176F7C7600EC2F96 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EFBE4F176F7C7600EC2F96 /* CoreData.framework */; };
+		28EFBE52176F849B00EC2F96 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EFBE51176F849B00EC2F96 /* CoreLocation.framework */; };
 		9C61AB8888334EA4B3FB9D82 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB87E295CD44E33BB074AD3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28D232AD176F87DD00405397 /* GLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLoginViewController.xib; sourceTree = "<group>"; };
 		28EFBDE6176F633700EC2F96 /* GTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28EFBDE9176F633700EC2F96 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28EFBDEB176F633700EC2F96 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -59,24 +65,30 @@
 		28EFBDFB176F633800EC2F96 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		28EFBDFD176F633800EC2F96 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		28EFBDFF176F633800EC2F96 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		28EFBE01176F633800EC2F96 /* GViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GViewController.h; sourceTree = "<group>"; };
-		28EFBE02176F633800EC2F96 /* GViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GViewController.m; sourceTree = "<group>"; };
-		28EFBE05176F633800EC2F96 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GViewController.xib; sourceTree = "<group>"; };
+		28EFBE01176F633800EC2F96 /* GLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLoginViewController.h; sourceTree = "<group>"; };
+		28EFBE02176F633800EC2F96 /* GLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLoginViewController.m; sourceTree = "<group>"; };
 		28EFBE0C176F633800EC2F96 /* GTCTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GTCTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28EFBE0D176F633800EC2F96 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		28EFBE15176F633800EC2F96 /* GTCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GTCTests-Info.plist"; sourceTree = "<group>"; };
 		28EFBE17176F633800EC2F96 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		28EFBE19176F633800EC2F96 /* GTCTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTCTests.h; sourceTree = "<group>"; };
 		28EFBE1A176F633800EC2F96 /* GTCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTCTests.m; sourceTree = "<group>"; };
-		28EFBE25176F634F00EC2F96 /* NotesModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotesModel.xcdatamodel; sourceTree = "<group>"; };
 		28EFBE28176F666300EC2F96 /* GLoginTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLoginTests.h; sourceTree = "<group>"; };
 		28EFBE29176F666300EC2F96 /* GLoginTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLoginTests.m; sourceTree = "<group>"; };
 		28EFBE2B176F674900EC2F96 /* GAuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAuthController.h; path = Login/GAuthController.h; sourceTree = "<group>"; };
 		28EFBE2C176F674900EC2F96 /* GAuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GAuthController.m; path = Login/GAuthController.m; sourceTree = "<group>"; };
 		28EFBE30176F71BF00EC2F96 /* NotesModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotesModel.xcdatamodel; sourceTree = "<group>"; };
-		28EFBE38176F740500EC2F96 /* GMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMainViewController.h; sourceTree = "<group>"; };
-		28EFBE39176F740500EC2F96 /* GMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMainViewController.m; sourceTree = "<group>"; };
 		28EFBE3A176F740500EC2F96 /* GMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GMainViewController.xib; sourceTree = "<group>"; };
+		28EFBE3D176F78AB00EC2F96 /* GNotesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNotesListViewController.h; sourceTree = "<group>"; };
+		28EFBE3E176F78AB00EC2F96 /* GNotesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNotesListViewController.m; sourceTree = "<group>"; };
+		28EFBE3F176F78AB00EC2F96 /* GNotesListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GNotesListViewController.xib; sourceTree = "<group>"; };
+		28EFBE42176F78E100EC2F96 /* GNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNoteViewController.h; sourceTree = "<group>"; };
+		28EFBE43176F78E100EC2F96 /* GNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNoteViewController.m; sourceTree = "<group>"; };
+		28EFBE44176F78E100EC2F96 /* GNoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GNoteViewController.xib; sourceTree = "<group>"; };
+		28EFBE4B176F79DF00EC2F96 /* NoteEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteEntity.h; sourceTree = "<group>"; };
+		28EFBE4C176F79DF00EC2F96 /* NoteEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteEntity.m; sourceTree = "<group>"; };
+		28EFBE4F176F7C7600EC2F96 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		28EFBE51176F849B00EC2F96 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5BB87E295CD44E33BB074AD3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9E2C0D9E624998A326EC61 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -86,6 +98,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28EFBE52176F849B00EC2F96 /* CoreLocation.framework in Frameworks */,
+				28EFBE50176F7C7600EC2F96 /* CoreData.framework in Frameworks */,
 				28EFBDEA176F633700EC2F96 /* UIKit.framework in Frameworks */,
 				28EFBDEC176F633700EC2F96 /* Foundation.framework in Frameworks */,
 				28EFBDEE176F633700EC2F96 /* CoreGraphics.framework in Frameworks */,
@@ -106,10 +120,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		28EFBDDD176F633700EC2F96 = {
+		2802B1D0176FA7AD00E65407 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				28EFBE2B176F674900EC2F96 /* GAuthController.h */,
+				28EFBE2C176F674900EC2F96 /* GAuthController.m */,
+				28EFBE01176F633800EC2F96 /* GLoginViewController.h */,
+				28EFBE02176F633800EC2F96 /* GLoginViewController.m */,
+				28D232AD176F87DD00405397 /* GLoginViewController.xib */,
+			);
+			name = Auth;
+			sourceTree = "<group>";
+		};
+		2802B1D1176FA7CA00E65407 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				28EFBE2F176F71BE00EC2F96 /* NotesModel.xcdatamodeld */,
+				28EFBE4B176F79DF00EC2F96 /* NoteEntity.h */,
+				28EFBE4C176F79DF00EC2F96 /* NoteEntity.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		28EFBDDD176F633700EC2F96 = {
+			isa = PBXGroup;
+			children = (
 				28EFBDEF176F633700EC2F96 /* GTC */,
 				28EFBE13176F633800EC2F96 /* GTCTests */,
 				28EFBDE8176F633700EC2F96 /* Frameworks */,
@@ -130,6 +165,8 @@
 		28EFBDE8176F633700EC2F96 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				28EFBE51176F849B00EC2F96 /* CoreLocation.framework */,
+				28EFBE4F176F7C7600EC2F96 /* CoreData.framework */,
 				28EFBDE9176F633700EC2F96 /* UIKit.framework */,
 				28EFBDEB176F633700EC2F96 /* Foundation.framework */,
 				28EFBDED176F633700EC2F96 /* CoreGraphics.framework */,
@@ -142,17 +179,17 @@
 		28EFBDEF176F633700EC2F96 /* GTC */ = {
 			isa = PBXGroup;
 			children = (
+				2802B1D1176FA7CA00E65407 /* Model */,
 				28EFBDF8176F633800EC2F96 /* GAppDelegate.h */,
 				28EFBDF9176F633800EC2F96 /* GAppDelegate.m */,
-				28EFBE01176F633800EC2F96 /* GViewController.h */,
-				28EFBE02176F633800EC2F96 /* GViewController.m */,
-				28EFBE04176F633800EC2F96 /* GViewController.xib */,
+				2802B1D0176FA7AD00E65407 /* Auth */,
+				28EFBE3D176F78AB00EC2F96 /* GNotesListViewController.h */,
+				28EFBE3E176F78AB00EC2F96 /* GNotesListViewController.m */,
+				28EFBE3F176F78AB00EC2F96 /* GNotesListViewController.xib */,
+				28EFBE42176F78E100EC2F96 /* GNoteViewController.h */,
+				28EFBE43176F78E100EC2F96 /* GNoteViewController.m */,
+				28EFBE44176F78E100EC2F96 /* GNoteViewController.xib */,
 				28EFBDF0176F633800EC2F96 /* Supporting Files */,
-				28EFBE24176F634F00EC2F96 /* NotesModel.xcdatamodeld */,
-				28EFBE2B176F674900EC2F96 /* GAuthController.h */,
-				28EFBE2C176F674900EC2F96 /* GAuthController.m */,
-				28EFBE38176F740500EC2F96 /* GMainViewController.h */,
-				28EFBE39176F740500EC2F96 /* GMainViewController.m */,
 				28EFBE3A176F740500EC2F96 /* GMainViewController.xib */,
 			);
 			path = GTC;
@@ -271,8 +308,10 @@
 				28EFBDFC176F633800EC2F96 /* Default.png in Resources */,
 				28EFBDFE176F633800EC2F96 /* Default@2x.png in Resources */,
 				28EFBE00176F633800EC2F96 /* Default-568h@2x.png in Resources */,
-				28EFBE06176F633800EC2F96 /* GViewController.xib in Resources */,
 				28EFBE3C176F740500EC2F96 /* GMainViewController.xib in Resources */,
+				28EFBE41176F78AB00EC2F96 /* GNotesListViewController.xib in Resources */,
+				28EFBE46176F78E100EC2F96 /* GNoteViewController.xib in Resources */,
+				28D232AE176F87DD00405397 /* GLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,11 +376,12 @@
 			files = (
 				28EFBDF6176F633800EC2F96 /* main.m in Sources */,
 				28EFBDFA176F633800EC2F96 /* GAppDelegate.m in Sources */,
-				28EFBE03176F633800EC2F96 /* GViewController.m in Sources */,
-				28EFBE26176F634F00EC2F96 /* NotesModel.xcdatamodeld in Sources */,
+				28EFBE03176F633800EC2F96 /* GLoginViewController.m in Sources */,
 				28EFBE2D176F674900EC2F96 /* GAuthController.m in Sources */,
 				28EFBE31176F71BF00EC2F96 /* NotesModel.xcdatamodeld in Sources */,
-				28EFBE3B176F740500EC2F96 /* GMainViewController.m in Sources */,
+				28EFBE40176F78AB00EC2F96 /* GNotesListViewController.m in Sources */,
+				28EFBE45176F78E100EC2F96 /* GNoteViewController.m in Sources */,
+				28EFBE4D176F79DF00EC2F96 /* NoteEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,10 +390,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				28EFBE1B176F633800EC2F96 /* GTCTests.m in Sources */,
-				28EFBE27176F634F00EC2F96 /* NotesModel.xcdatamodeld in Sources */,
 				28EFBE2A176F666300EC2F96 /* GLoginTests.m in Sources */,
 				28EFBE2E176F674900EC2F96 /* GAuthController.m in Sources */,
 				28EFBE32176F71BF00EC2F96 /* NotesModel.xcdatamodeld in Sources */,
+				28EFBE4E176F79DF00EC2F96 /* NoteEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,14 +414,6 @@
 				28EFBDF3176F633800EC2F96 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		28EFBE04176F633800EC2F96 /* GViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				28EFBE05176F633800EC2F96 /* en */,
-			);
-			name = GViewController.xib;
 			sourceTree = "<group>";
 		};
 		28EFBE16176F633800EC2F96 /* InfoPlist.strings */ = {
@@ -544,23 +576,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		28EFBE24176F634F00EC2F96 /* NotesModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				28EFBE25176F634F00EC2F96 /* NotesModel.xcdatamodel */,
-			);
-			currentVersion = 28EFBE25176F634F00EC2F96 /* NotesModel.xcdatamodel */;
-			path = NotesModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		28EFBE2F176F71BE00EC2F96 /* NotesModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				28EFBE30176F71BF00EC2F96 /* NotesModel.xcdatamodel */,
 			);
 			currentVersion = 28EFBE30176F71BF00EC2F96 /* NotesModel.xcdatamodel */;
-			path = NotesModel.xcdatamodeld;
+			name = NotesModel.xcdatamodeld;
+			path = ../NotesModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
