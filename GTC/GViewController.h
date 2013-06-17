@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface GViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UITextField *tfLogin;
+@property (strong, nonatomic) IBOutlet UITextField *tfPassword;
+@property (strong, nonatomic) IBOutlet UILabel *lbLoginFailed;
+- (IBAction)onLogin;
 
 @end

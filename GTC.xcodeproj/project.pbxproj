@@ -23,6 +23,16 @@
 		28EFBE10176F633800EC2F96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EFBDEB176F633700EC2F96 /* Foundation.framework */; };
 		28EFBE18176F633800EC2F96 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28EFBE16176F633800EC2F96 /* InfoPlist.strings */; };
 		28EFBE1B176F633800EC2F96 /* GTCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE1A176F633800EC2F96 /* GTCTests.m */; };
+		28EFBE26176F634F00EC2F96 /* NotesModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE24176F634F00EC2F96 /* NotesModel.xcdatamodeld */; };
+		28EFBE27176F634F00EC2F96 /* NotesModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE24176F634F00EC2F96 /* NotesModel.xcdatamodeld */; };
+		28EFBE2A176F666300EC2F96 /* GLoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE29176F666300EC2F96 /* GLoginTests.m */; };
+		28EFBE2D176F674900EC2F96 /* GAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE2C176F674900EC2F96 /* GAuthController.m */; };
+		28EFBE2E176F674900EC2F96 /* GAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE2C176F674900EC2F96 /* GAuthController.m */; };
+		28EFBE31176F71BF00EC2F96 /* NotesModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE2F176F71BE00EC2F96 /* NotesModel.xcdatamodeld */; };
+		28EFBE32176F71BF00EC2F96 /* NotesModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE2F176F71BE00EC2F96 /* NotesModel.xcdatamodeld */; };
+		28EFBE3B176F740500EC2F96 /* GMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE39176F740500EC2F96 /* GMainViewController.m */; };
+		28EFBE3C176F740500EC2F96 /* GMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28EFBE3A176F740500EC2F96 /* GMainViewController.xib */; };
+		9C61AB8888334EA4B3FB9D82 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB87E295CD44E33BB074AD3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +68,17 @@
 		28EFBE17176F633800EC2F96 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		28EFBE19176F633800EC2F96 /* GTCTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTCTests.h; sourceTree = "<group>"; };
 		28EFBE1A176F633800EC2F96 /* GTCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTCTests.m; sourceTree = "<group>"; };
+		28EFBE25176F634F00EC2F96 /* NotesModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotesModel.xcdatamodel; sourceTree = "<group>"; };
+		28EFBE28176F666300EC2F96 /* GLoginTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLoginTests.h; sourceTree = "<group>"; };
+		28EFBE29176F666300EC2F96 /* GLoginTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLoginTests.m; sourceTree = "<group>"; };
+		28EFBE2B176F674900EC2F96 /* GAuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAuthController.h; path = Login/GAuthController.h; sourceTree = "<group>"; };
+		28EFBE2C176F674900EC2F96 /* GAuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GAuthController.m; path = Login/GAuthController.m; sourceTree = "<group>"; };
+		28EFBE30176F71BF00EC2F96 /* NotesModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotesModel.xcdatamodel; sourceTree = "<group>"; };
+		28EFBE38176F740500EC2F96 /* GMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMainViewController.h; sourceTree = "<group>"; };
+		28EFBE39176F740500EC2F96 /* GMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMainViewController.m; sourceTree = "<group>"; };
+		28EFBE3A176F740500EC2F96 /* GMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GMainViewController.xib; sourceTree = "<group>"; };
+		5BB87E295CD44E33BB074AD3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E9E2C0D9E624998A326EC61 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +89,7 @@
 				28EFBDEA176F633700EC2F96 /* UIKit.framework in Frameworks */,
 				28EFBDEC176F633700EC2F96 /* Foundation.framework in Frameworks */,
 				28EFBDEE176F633700EC2F96 /* CoreGraphics.framework in Frameworks */,
+				9C61AB8888334EA4B3FB9D82 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,10 +109,12 @@
 		28EFBDDD176F633700EC2F96 = {
 			isa = PBXGroup;
 			children = (
+				28EFBE2F176F71BE00EC2F96 /* NotesModel.xcdatamodeld */,
 				28EFBDEF176F633700EC2F96 /* GTC */,
 				28EFBE13176F633800EC2F96 /* GTCTests */,
 				28EFBDE8176F633700EC2F96 /* Frameworks */,
 				28EFBDE7176F633700EC2F96 /* Products */,
+				8E9E2C0D9E624998A326EC61 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +134,7 @@
 				28EFBDEB176F633700EC2F96 /* Foundation.framework */,
 				28EFBDED176F633700EC2F96 /* CoreGraphics.framework */,
 				28EFBE0D176F633800EC2F96 /* SenTestingKit.framework */,
+				5BB87E295CD44E33BB074AD3 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -123,6 +148,12 @@
 				28EFBE02176F633800EC2F96 /* GViewController.m */,
 				28EFBE04176F633800EC2F96 /* GViewController.xib */,
 				28EFBDF0176F633800EC2F96 /* Supporting Files */,
+				28EFBE24176F634F00EC2F96 /* NotesModel.xcdatamodeld */,
+				28EFBE2B176F674900EC2F96 /* GAuthController.h */,
+				28EFBE2C176F674900EC2F96 /* GAuthController.m */,
+				28EFBE38176F740500EC2F96 /* GMainViewController.h */,
+				28EFBE39176F740500EC2F96 /* GMainViewController.m */,
+				28EFBE3A176F740500EC2F96 /* GMainViewController.xib */,
 			);
 			path = GTC;
 			sourceTree = "<group>";
@@ -147,6 +178,8 @@
 				28EFBE19176F633800EC2F96 /* GTCTests.h */,
 				28EFBE1A176F633800EC2F96 /* GTCTests.m */,
 				28EFBE14176F633800EC2F96 /* Supporting Files */,
+				28EFBE28176F666300EC2F96 /* GLoginTests.h */,
+				28EFBE29176F666300EC2F96 /* GLoginTests.m */,
 			);
 			path = GTCTests;
 			sourceTree = "<group>";
@@ -167,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28EFBE1E176F633800EC2F96 /* Build configuration list for PBXNativeTarget "GTC" */;
 			buildPhases = (
+				CDF66D9C8BFA47F6AEFA6092 /* Check Pods Manifest.lock */,
 				28EFBDE2176F633700EC2F96 /* Sources */,
 				28EFBDE3176F633700EC2F96 /* Frameworks */,
 				28EFBDE4176F633700EC2F96 /* Resources */,
+				8ACCAB9984A246519429EA00 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,6 +272,7 @@
 				28EFBDFE176F633800EC2F96 /* Default@2x.png in Resources */,
 				28EFBE00176F633800EC2F96 /* Default-568h@2x.png in Resources */,
 				28EFBE06176F633800EC2F96 /* GViewController.xib in Resources */,
+				28EFBE3C176F740500EC2F96 /* GMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +300,34 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		8ACCAB9984A246519429EA00 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		CDF66D9C8BFA47F6AEFA6092 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -274,6 +338,10 @@
 				28EFBDF6176F633800EC2F96 /* main.m in Sources */,
 				28EFBDFA176F633800EC2F96 /* GAppDelegate.m in Sources */,
 				28EFBE03176F633800EC2F96 /* GViewController.m in Sources */,
+				28EFBE26176F634F00EC2F96 /* NotesModel.xcdatamodeld in Sources */,
+				28EFBE2D176F674900EC2F96 /* GAuthController.m in Sources */,
+				28EFBE31176F71BF00EC2F96 /* NotesModel.xcdatamodeld in Sources */,
+				28EFBE3B176F740500EC2F96 /* GMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +350,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				28EFBE1B176F633800EC2F96 /* GTCTests.m in Sources */,
+				28EFBE27176F634F00EC2F96 /* NotesModel.xcdatamodeld in Sources */,
+				28EFBE2A176F666300EC2F96 /* GLoginTests.m in Sources */,
+				28EFBE2E176F674900EC2F96 /* GAuthController.m in Sources */,
+				28EFBE32176F71BF00EC2F96 /* NotesModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,10 +453,12 @@
 		};
 		28EFBE1F176F633800EC2F96 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E9E2C0D9E624998A326EC61 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GTC/GTC-Prefix.pch";
 				INFOPLIST_FILE = "GTC/GTC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -392,10 +466,12 @@
 		};
 		28EFBE20176F633800EC2F96 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E9E2C0D9E624998A326EC61 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GTC/GTC-Prefix.pch";
 				INFOPLIST_FILE = "GTC/GTC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -454,6 +530,7 @@
 				28EFBE20176F633800EC2F96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28EFBE21176F633800EC2F96 /* Build configuration list for PBXNativeTarget "GTCTests" */ = {
 			isa = XCConfigurationList;
@@ -462,8 +539,32 @@
 				28EFBE23176F633800EC2F96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		28EFBE24176F634F00EC2F96 /* NotesModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				28EFBE25176F634F00EC2F96 /* NotesModel.xcdatamodel */,
+			);
+			currentVersion = 28EFBE25176F634F00EC2F96 /* NotesModel.xcdatamodel */;
+			path = NotesModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		28EFBE2F176F71BE00EC2F96 /* NotesModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				28EFBE30176F71BF00EC2F96 /* NotesModel.xcdatamodel */,
+			);
+			currentVersion = 28EFBE30176F71BF00EC2F96 /* NotesModel.xcdatamodel */;
+			path = NotesModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 28EFBDDE176F633700EC2F96 /* Project object */;
 }
