@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class GLoginViewController;
+@class NoteEntity;
 
 @interface GAppDelegate : UIResponder <UIApplicationDelegate>
 @property (strong, nonatomic) UIWindow *window;
@@ -16,5 +17,5 @@
 @property (strong, nonatomic)NSManagedObjectModel *managedObjectModel;
 @property (strong, nonatomic)NSManagedObjectContext *managedObjectContext;
 @property (strong, nonatomic) IBOutlet UINavigationController *navigationController;
-
+- (void)saveContext ;
 @end

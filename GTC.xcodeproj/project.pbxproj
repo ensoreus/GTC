@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2802B1D6176FD07300E65407 /* GSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2802B1D5176FD07300E65407 /* GSyncManager.m */; };
+		2802B1D7176FD07300E65407 /* GSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2802B1D5176FD07300E65407 /* GSyncManager.m */; };
+		2802B1DA176FD08E00E65407 /* GSyncTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2802B1D9176FD08E00E65407 /* GSyncTests.m */; };
+		2802B1DF176FD43500E65407 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EFBE4F176F7C7600EC2F96 /* CoreData.framework */; };
+		2802B1E2176FD5B200E65407 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2802B1E1176FD5B200E65407 /* libPods.a */; };
+		2802B1EA176FF4A100E65407 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 2802B1E4176FF49B00E65407 /* add.png */; };
+		2802B1EB176FF4A100E65407 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 2802B1E4176FF49B00E65407 /* add.png */; };
+		2802B1EC176FF4A100E65407 /* add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2802B1E5176FF49C00E65407 /* add@2x.png */; };
+		2802B1ED176FF4A100E65407 /* add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2802B1E5176FF49C00E65407 /* add@2x.png */; };
+		2802B1EE176FF4A100E65407 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 2802B1E6176FF49D00E65407 /* logout.png */; };
+		2802B1EF176FF4A100E65407 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 2802B1E6176FF49D00E65407 /* logout.png */; };
+		2802B1F0176FF4A100E65407 /* logout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2802B1E7176FF49E00E65407 /* logout@2x.png */; };
+		2802B1F1176FF4A100E65407 /* logout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2802B1E7176FF49E00E65407 /* logout@2x.png */; };
+		2802B1F2176FF4A100E65407 /* sync.png in Resources */ = {isa = PBXBuildFile; fileRef = 2802B1E8176FF49F00E65407 /* sync.png */; };
+		2802B1F3176FF4A100E65407 /* sync.png in Resources */ = {isa = PBXBuildFile; fileRef = 2802B1E8176FF49F00E65407 /* sync.png */; };
+		2802B1F4176FF4A100E65407 /* sync@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2802B1E9176FF49F00E65407 /* sync@2x.png */; };
+		2802B1F5176FF4A100E65407 /* sync@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2802B1E9176FF49F00E65407 /* sync@2x.png */; };
+		2802B1F8176FFA6B00E65407 /* GSyncManagerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2802B1F7176FFA6A00E65407 /* GSyncManagerFactory.m */; };
+		2802B1F9176FFA6B00E65407 /* GSyncManagerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2802B1F7176FFA6A00E65407 /* GSyncManagerFactory.m */; };
 		28D232AE176F87DD00405397 /* GLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D232AD176F87DD00405397 /* GLoginViewController.xib */; };
 		28EFBDEA176F633700EC2F96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EFBDE9176F633700EC2F96 /* UIKit.framework */; };
 		28EFBDEC176F633700EC2F96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EFBDEB176F633700EC2F96 /* Foundation.framework */; };
@@ -51,6 +70,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2802B1D4176FD07300E65407 /* GSyncManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSyncManager.h; sourceTree = "<group>"; };
+		2802B1D5176FD07300E65407 /* GSyncManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSyncManager.m; sourceTree = "<group>"; };
+		2802B1D8176FD08E00E65407 /* GSyncTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSyncTests.h; sourceTree = "<group>"; };
+		2802B1D9176FD08E00E65407 /* GSyncTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSyncTests.m; sourceTree = "<group>"; };
+		2802B1E0176FD4DA00E65407 /* SyncProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyncProtocol.h; sourceTree = "<group>"; };
+		2802B1E1176FD5B200E65407 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libPods.a; path = "Pods/build/Release-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		2802B1E3176FDB3C00E65407 /* Commons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Commons.h; sourceTree = "<group>"; };
+		2802B1E4176FF49B00E65407 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = SOURCE_ROOT; };
+		2802B1E5176FF49C00E65407 /* add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add@2x.png"; sourceTree = SOURCE_ROOT; };
+		2802B1E6176FF49D00E65407 /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout.png; sourceTree = SOURCE_ROOT; };
+		2802B1E7176FF49E00E65407 /* logout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logout@2x.png"; sourceTree = SOURCE_ROOT; };
+		2802B1E8176FF49F00E65407 /* sync.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sync.png; sourceTree = SOURCE_ROOT; };
+		2802B1E9176FF49F00E65407 /* sync@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sync@2x.png"; sourceTree = SOURCE_ROOT; };
+		2802B1F6176FFA6900E65407 /* GSyncManagerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSyncManagerFactory.h; sourceTree = "<group>"; };
+		2802B1F7176FFA6A00E65407 /* GSyncManagerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSyncManagerFactory.m; sourceTree = "<group>"; };
 		28D232AD176F87DD00405397 /* GLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLoginViewController.xib; sourceTree = "<group>"; };
 		28EFBDE6176F633700EC2F96 /* GTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28EFBDE9176F633700EC2F96 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -111,6 +145,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2802B1E2176FD5B200E65407 /* libPods.a in Frameworks */,
+				2802B1DF176FD43500E65407 /* CoreData.framework in Frameworks */,
 				28EFBE0E176F633800EC2F96 /* SenTestingKit.framework in Frameworks */,
 				28EFBE0F176F633800EC2F96 /* UIKit.framework in Frameworks */,
 				28EFBE10176F633800EC2F96 /* Foundation.framework in Frameworks */,
@@ -142,6 +178,26 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		2802B1D2176FD03E00E65407 /* NotesList */ = {
+			isa = PBXGroup;
+			children = (
+				28EFBE3D176F78AB00EC2F96 /* GNotesListViewController.h */,
+				28EFBE3E176F78AB00EC2F96 /* GNotesListViewController.m */,
+				28EFBE3F176F78AB00EC2F96 /* GNotesListViewController.xib */,
+			);
+			name = NotesList;
+			sourceTree = "<group>";
+		};
+		2802B1D3176FD04B00E65407 /* NoteDetail */ = {
+			isa = PBXGroup;
+			children = (
+				28EFBE42176F78E100EC2F96 /* GNoteViewController.h */,
+				28EFBE43176F78E100EC2F96 /* GNoteViewController.m */,
+				28EFBE44176F78E100EC2F96 /* GNoteViewController.xib */,
+			);
+			name = NoteDetail;
+			sourceTree = "<group>";
+		};
 		28EFBDDD176F633700EC2F96 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +205,7 @@
 				28EFBE13176F633800EC2F96 /* GTCTests */,
 				28EFBDE8176F633700EC2F96 /* Frameworks */,
 				28EFBDE7176F633700EC2F96 /* Products */,
+				2802B1E1176FD5B200E65407 /* libPods.a */,
 				8E9E2C0D9E624998A326EC61 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
@@ -179,18 +236,26 @@
 		28EFBDEF176F633700EC2F96 /* GTC */ = {
 			isa = PBXGroup;
 			children = (
+				2802B1E4176FF49B00E65407 /* add.png */,
+				2802B1E5176FF49C00E65407 /* add@2x.png */,
+				2802B1E6176FF49D00E65407 /* logout.png */,
+				2802B1E7176FF49E00E65407 /* logout@2x.png */,
+				2802B1E8176FF49F00E65407 /* sync.png */,
+				2802B1E9176FF49F00E65407 /* sync@2x.png */,
 				2802B1D1176FA7CA00E65407 /* Model */,
-				28EFBDF8176F633800EC2F96 /* GAppDelegate.h */,
-				28EFBDF9176F633800EC2F96 /* GAppDelegate.m */,
 				2802B1D0176FA7AD00E65407 /* Auth */,
-				28EFBE3D176F78AB00EC2F96 /* GNotesListViewController.h */,
-				28EFBE3E176F78AB00EC2F96 /* GNotesListViewController.m */,
-				28EFBE3F176F78AB00EC2F96 /* GNotesListViewController.xib */,
-				28EFBE42176F78E100EC2F96 /* GNoteViewController.h */,
-				28EFBE43176F78E100EC2F96 /* GNoteViewController.m */,
-				28EFBE44176F78E100EC2F96 /* GNoteViewController.xib */,
+				2802B1D2176FD03E00E65407 /* NotesList */,
+				2802B1D3176FD04B00E65407 /* NoteDetail */,
 				28EFBDF0176F633800EC2F96 /* Supporting Files */,
 				28EFBE3A176F740500EC2F96 /* GMainViewController.xib */,
+				28EFBDF8176F633800EC2F96 /* GAppDelegate.h */,
+				28EFBDF9176F633800EC2F96 /* GAppDelegate.m */,
+				2802B1E0176FD4DA00E65407 /* SyncProtocol.h */,
+				2802B1F6176FFA6900E65407 /* GSyncManagerFactory.h */,
+				2802B1F7176FFA6A00E65407 /* GSyncManagerFactory.m */,
+				2802B1D4176FD07300E65407 /* GSyncManager.h */,
+				2802B1D5176FD07300E65407 /* GSyncManager.m */,
+				2802B1E3176FDB3C00E65407 /* Commons.h */,
 			);
 			path = GTC;
 			sourceTree = "<group>";
@@ -217,6 +282,8 @@
 				28EFBE14176F633800EC2F96 /* Supporting Files */,
 				28EFBE28176F666300EC2F96 /* GLoginTests.h */,
 				28EFBE29176F666300EC2F96 /* GLoginTests.m */,
+				2802B1D8176FD08E00E65407 /* GSyncTests.h */,
+				2802B1D9176FD08E00E65407 /* GSyncTests.m */,
 			);
 			path = GTCTests;
 			sourceTree = "<group>";
@@ -312,6 +379,12 @@
 				28EFBE41176F78AB00EC2F96 /* GNotesListViewController.xib in Resources */,
 				28EFBE46176F78E100EC2F96 /* GNoteViewController.xib in Resources */,
 				28D232AE176F87DD00405397 /* GLoginViewController.xib in Resources */,
+				2802B1EA176FF4A100E65407 /* add.png in Resources */,
+				2802B1EC176FF4A100E65407 /* add@2x.png in Resources */,
+				2802B1EE176FF4A100E65407 /* logout.png in Resources */,
+				2802B1F0176FF4A100E65407 /* logout@2x.png in Resources */,
+				2802B1F2176FF4A100E65407 /* sync.png in Resources */,
+				2802B1F4176FF4A100E65407 /* sync@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +393,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				28EFBE18176F633800EC2F96 /* InfoPlist.strings in Resources */,
+				2802B1EB176FF4A100E65407 /* add.png in Resources */,
+				2802B1ED176FF4A100E65407 /* add@2x.png in Resources */,
+				2802B1EF176FF4A100E65407 /* logout.png in Resources */,
+				2802B1F1176FF4A100E65407 /* logout@2x.png in Resources */,
+				2802B1F3176FF4A100E65407 /* sync.png in Resources */,
+				2802B1F5176FF4A100E65407 /* sync@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +461,8 @@
 				28EFBE40176F78AB00EC2F96 /* GNotesListViewController.m in Sources */,
 				28EFBE45176F78E100EC2F96 /* GNoteViewController.m in Sources */,
 				28EFBE4D176F79DF00EC2F96 /* NoteEntity.m in Sources */,
+				2802B1D6176FD07300E65407 /* GSyncManager.m in Sources */,
+				2802B1F8176FFA6B00E65407 /* GSyncManagerFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +475,9 @@
 				28EFBE2E176F674900EC2F96 /* GAuthController.m in Sources */,
 				28EFBE32176F71BF00EC2F96 /* NotesModel.xcdatamodeld in Sources */,
 				28EFBE4E176F79DF00EC2F96 /* NoteEntity.m in Sources */,
+				2802B1D7176FD07300E65407 /* GSyncManager.m in Sources */,
+				2802B1DA176FD08E00E65407 /* GSyncTests.m in Sources */,
+				2802B1F9176FFA6B00E65407 /* GSyncManagerFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

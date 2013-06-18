@@ -16,6 +16,7 @@
 			<string>IBUINavigationBar</string>
 			<string>IBUINavigationController</string>
 			<string>IBUINavigationItem</string>
+			<string>IBUIToolbar</string>
 			<string>IBUIViewController</string>
 		</array>
 		<array key="IBDocument.PluginDependencies">
@@ -68,6 +69,14 @@
 					<int key="NSvFlags">256</int>
 					<string key="NSFrameSize">{0, 0}</string>
 					<string key="NSReuseIdentifierKey">_NS:15</string>
+					<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+				</object>
+				<object class="IBUIToolbar" key="IBUIToolbar" id="950351700">
+					<nil key="NSNextResponder"/>
+					<int key="NSvFlags">256</int>
+					<string key="NSFrame">{{0, 524}, {320, 44}}</string>
+					<bool key="IBUIOpaque">NO</bool>
+					<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 					<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 				</object>
 				<array class="NSMutableArray" key="IBUIViewControllers">
@@ -134,6 +143,7 @@
 						<array class="NSMutableArray" key="children">
 							<reference ref="205910253"/>
 							<reference ref="152694521"/>
+							<reference ref="950351700"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -160,6 +170,11 @@
 						<reference key="object" ref="116103633"/>
 						<reference key="parent" ref="0"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">21</int>
+						<reference key="object" ref="950351700"/>
+						<reference key="parent" ref="472283550"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -169,6 +184,7 @@
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="10.CustomClassName">GAppDelegate</string>
 				<string key="10.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="21.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="4.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="5.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="6.CustomClassName">GLoginViewController</string>
@@ -179,7 +195,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">14</int>
+			<int key="maxID">21</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">

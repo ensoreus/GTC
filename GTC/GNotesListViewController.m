@@ -10,24 +10,26 @@
 #import "GNoteViewController.h"
 #import "NoteEntity.h"
 #import "GAppDelegate.h"
+#import "SyncProtocol.h"
+#import "GSyncManagerFactory.h"
+#import "GAuthController.h"
+#import "MBProgressHUD.h"
 
-@interface GNotesListViewController ()<CLLocationManagerDelegate, UISearchBarDelegate>
+@interface GNotesListViewController ()<CLLocationManagerDelegate, UISearchBarDelegate, SyncDelegateProtocol>
 @property (nonatomic, strong) NSManagedObjectContext* managedObjectContext;
 @property (nonatomic, strong) NSFetchedResultsController *fetchResultsController;
 @property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic, strong) UIBarButtonItem* addButton;
-@property (strong, nonatomic) IBOutlet UIBarButtonItem *btnSync;
 @property (nonatomic, strong) NSArray* currentDataSourceArray;
+@property (nonatomic, strong) UIToolbar *toolBar;
+@property (nonatomic, strong) id<SyncProtocol> syncManager;
 @end
 
 @implementation GNotesListViewController
-
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        
     }
     return self;
 }
@@ -41,11 +43,15 @@
 
 - (void)viewDidLoad
 {
+    self.title = @"Notes";
+    self.syncManager = [GSyncManagerFactory makeSyncManager];
+    [self.syncManager setDelegate:self];
     [super viewDidLoad];
     [self setupToolbar];
     [self setupLocationManager];
     [self setupManagedObjectContext];
     [self setupNavigationBar];
+    [self setupToolbar];
     [self fetchNotes];
 	// Start the location manager.
 	[[self locationManager] startUpdatingLocation];
@@ -65,12 +71,36 @@
     [self cleanStorage];
 }
 
+- (BOOL)shouldAutorotate{
+    return NO;
+}
+
+- (void)repositionToolBar:(UIToolbar *)toolbar
+{
+	// size up the toolbar and set its frame
+    [toolbar sizeToFit];
+	CGFloat toolbarHeight = [toolbar frame].size.height;
+	CGRect mainViewBounds = [[UIScreen mainScreen] bounds];
+	[toolbar setFrame:CGRectMake(CGRectGetMinX(mainViewBounds),
+								 CGRectGetMinY(mainViewBounds) + CGRectGetHeight(mainViewBounds) - (toolbarHeight * 2.0) + 2.0 + self.searchController.bounds.size.height,
+								 CGRectGetWidth(mainViewBounds),
+								 toolbarHeight)];
+}
+
 - (void)setupToolbar
 {
-    UIBarButtonItem* space = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    self.toolBar = [UIToolbar new];
+	self.toolBar.barStyle = UIBarStyleDefault;
+	
+    [self repositionToolBar:self.toolBar];
+	
+	[self.navigationController.view addSubview:self.toolBar];
+    
+    UIBarButtonItem* sync = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(onSync)];
+    UIBarButtonItem* spacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     UIBarButtonItem* logout = [[UIBarButtonItem alloc] initWithTitle:@"Logout" style:UIBarButtonItemStyleBordered target:self action:@selector(onLogout)];
-    [self.navigationController setToolbarItems:@[self.btnSync, space, logout]];
-    [self.navigationController setToolbarHidden:NO];
+    NSArray* items = @[sync, spacer, logout];
+    [self.toolBar setItems:items animated:YES];
 }
 
 - (void)setupLocationManager
@@ -144,15 +174,6 @@
     
     return cell;
 }
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
 
 
 // Override to support editing the table view.
@@ -248,12 +269,27 @@
 }
 
 - (void)onLogout{
-    NSLog(@"logout");
+    [[GAuthController authController] logout];
+    [self.notesArray removeAllObjects];
+    [(GAppDelegate *)[[UIApplication sharedApplication] delegate] saveContext];
+    [self.tableView reloadData];
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    
 }
 
-- (IBAction)onSync:(id)sender {
-    NSLog(@"Sync");
+- (void)onSync{
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+       [self.syncManager synchronizeWithNotes:self.notesArray]; 
 }
 
+- (void)newNotesArrived:(NSArray *)notes{
+        [self.notesArray addObjectsFromArray:notes];
+        [self.tableView reloadData];
+}
+
+- (void)deletesNotes:(NSArray *)notes{
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+    [self.notesArray removeObjectsInArray:notes];
+}
 
 @end

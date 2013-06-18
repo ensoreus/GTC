@@ -67,6 +67,5 @@
 - (void)logout
 {
     self.token = nil;
-    self.successBlock(nil);
 }
 @end

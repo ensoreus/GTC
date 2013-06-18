@@ -10,6 +10,6 @@
 #import <CoreLocation/CoreLocation.h>
 
 @interface GNotesListViewController : UITableViewController
-@property (strong, nonatomic) IBOutlet UISearchDisplayController *serachController;
+@property (strong, nonatomic) IBOutlet UISearchBar *searchController;
 @property (nonatomic, strong) NSMutableArray* notesArray;
 @end
